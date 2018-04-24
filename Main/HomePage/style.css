@@ -1,5 +1,6 @@
 body {
     background: #202020;
+    margin: 0px;
 }
 #dropdown {
     position: relative;
@@ -12,6 +13,7 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s;
 }
 #dropdown-content {
     display: none;
@@ -20,18 +22,25 @@ body {
     min-width: 160px;
     box-shadow: 0px 5px 5px -3px #808080;
     z-index: 1;
+    opacity: 0;
 }
 #dropdown-content a {
     color: #ffffff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    transition: all 0.2s;
 }
 #dropdown-content a:hover {
     background: #454545;
 }
 #dropdown:hover #dropdown-content {
     display: block;
+    animation: load 0.3s forwards;
+}
+@keyframes load {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 #dropdown:hover #dropbutton {
     background: #505050;
@@ -44,6 +53,7 @@ body {
     border: none;
     cursor: pointer;
     margin: 0px;
+    transition: all 0.3s;
 }
 .a {
     text-decoration: none;
@@ -51,3 +61,26 @@ body {
 .a:hover {
     box-shadow: 0px 5px 5px -3px #808080;
 }
+nav {
+    display: inline-flex;
+}
+#navbutton:hover {
+    background: #505050;
+}
+/*Testing Hover
+#TB1 {
+    position: relative;
+    top: 40px;
+    height: 40px;
+    width: 60px;
+}
+#TD1 {
+    background: #505050;
+    padding: 40px;
+    position: absolute;
+    top: 200px;
+}
+#TD1:hover + p {
+    background: #909090;
+}
+*/
