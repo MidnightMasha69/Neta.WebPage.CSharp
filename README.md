@@ -10,3 +10,6 @@ ChangeLog:
     
     v0.03 - Styled navigation menu, animations and transitions. - 4/24/2018 5:46 PM
     + Added two imgs to navigation menu for better look. - 4/24/2018 5:47 PM
+    
+    v0.04 - Added new font "Lemon Milk" and applied to navigation menu. - 4/26/2018 19:57 PM
+    + added footer and some tweaks to navigation menu. - 4/26/2018 19:57 PM
