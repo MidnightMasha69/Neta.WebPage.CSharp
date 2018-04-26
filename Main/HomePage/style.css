@@ -1,6 +1,7 @@
 body {
     background: #202020;
     margin: 0px;
+    /*font-family: LemonMilk;*/
 }
 #dropdown {
     position: relative;
@@ -14,6 +15,7 @@ body {
     border: none;
     cursor: pointer;
     transition: all 0.3s;
+    box-shadow: none;
 }
 #dropdown-content {
     display: none;
@@ -67,20 +69,20 @@ nav {
 #navbutton:hover {
     background: #505050;
 }
-/*Testing Hover
-#TB1 {
-    position: relative;
-    top: 40px;
-    height: 40px;
-    width: 60px;
+@font-face {
+    font-family: LemonMilk;
+    src: url("../Fonts/lemon_milk/LemonMilk.otf") format("opentype");
 }
-#TD1 {
-    background: #505050;
-    padding: 40px;
+.af {
+    font-family: LemonMilk;
+}
+footer {
     position: absolute;
-    top: 200px;
+    bottom: 0;
+    margin: 0px;
+    display: inline-flex;
 }
-#TD1:hover + p {
-    background: #909090;
+#footera {
+    min-height: 200px;
+    background: #404040;
 }
-*/
