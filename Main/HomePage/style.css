@@ -83,6 +83,8 @@ footer {
     display: inline-flex;
 }
 #footera {
-    min-height: 200px;
+    font-family: Arial;
+    /*min-height: 200px;*/
     background: #404040;
+    color: #acacac;
 }
