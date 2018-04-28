@@ -13,3 +13,5 @@ ChangeLog:
     
     v0.04 - Added new font "Lemon Milk" and applied to navigation menu. - 4/26/2018 19:57 PM
     + added footer and some tweaks to navigation menu. - 4/26/2018 19:57 PM
+    
+    v0.041 - Added copyright symbol and name to footer. - 4/28/2018 4:44 PM
