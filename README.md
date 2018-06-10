@@ -15,3 +15,6 @@ ChangeLog:
     + added footer and some tweaks to navigation menu. - 4/26/2018 19:57 PM
     
     v0.041 - Added copyright symbol and name to footer. - 4/28/2018 4:44 PM
+    
+    v0.05 - From now i wont describe a lot of additions or changes maybe a little info 
+    or even zero but only version tags so more things can made with less time. - 6/10/2018 9:43 PM
