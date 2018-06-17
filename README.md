@@ -18,3 +18,6 @@ ChangeLog:
     
     v0.05 - From now i wont describe a lot of additions or changes maybe a little info 
     or even zero but only version tags so more things can made with less time. - 6/10/2018 9:43 PM
+    
+    v0.06 - Anti selection and draggability for pics added, Main pic with full name added with
+    with glitchy style for them. - 6/17/2018 10:14 PM
