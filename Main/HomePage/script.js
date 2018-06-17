@@ -1,3 +1,3 @@
-function Load(){
-	
+function Load() {
+
 }
