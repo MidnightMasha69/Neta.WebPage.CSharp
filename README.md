@@ -21,3 +21,5 @@ ChangeLog:
     
     v0.06 - Anti selection and draggability for pics added, Main pic with full name added with
     with glitchy style for them. - 6/17/2018 10:14 PM
+    
+    v0.07 - added some shit. - 6/19/2018 9:59 PM
