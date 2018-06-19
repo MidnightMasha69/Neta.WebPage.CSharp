@@ -128,12 +128,13 @@ footer {
     margin: 0px 266px 0px 137px;
     padding: 16px;
     font-family: lemonmilk;
-    font-size: 42px;
 }
 
-#welcome article p {
+#w-heading {
     color: #ffffff;
-    text-shadow: 0px 0px 10px #000;
+    text-shadow: 0px 0px 10px #8a2be2;
+    font-size: 54px;
+    text-align: center;
 }
 
 #selfpic {
@@ -189,4 +190,12 @@ footer {
     position: absolute;
     top: 50px;
     left: 240px;
+}
+
+#w-text {
+    border: 2px solid #fff;
+    border-radius: 8px;
+    width: auto;
+    box-shadow: 0px 0px 20px #fff;
+    font-size: 32px;
 }
