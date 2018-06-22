@@ -22,4 +22,6 @@ ChangeLog:
     v0.06 - Anti selection and draggability for pics added, Main pic with full name added with
     with glitchy style for them. - 6/17/2018 10:14 PM
     
-    v0.07 - added some shit. - 6/19/2018 9:59 PM
+    v0.07 - Added some shit. - 6/19/2018 9:59 PM
+    
+    v0.08 - Added text to the About Me section. - 6/22-2018 - 9:35 PM
