@@ -25,3 +25,4 @@ ChangeLog:
     v0.07 - Added some shit. - 6/19/2018 9:59 PM
     
     v0.08 - Added text to the About Me section. - 6/22-2018 - 9:35 PM
+    dont forget to add midnightmasha69 nickname info.
