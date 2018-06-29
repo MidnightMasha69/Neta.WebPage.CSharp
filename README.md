@@ -26,3 +26,8 @@ ChangeLog:
     
     v0.08 - Added text to the About Me section. - 6/22-2018 - 9:35 PM
     dont forget to add midnightmasha69 nickname info.
+    
+    v0.6 - im skipping a fair amount of versions because the site have been worked on a lot and
+    as i said at v0.05 i didnt write the progress but in short added massive amount of content,
+    added more webpages and design. Upcoming more design and perfomance fixes and adjusments,
+    also a big responsive update. - 6/29/2018 - 9:38 PM

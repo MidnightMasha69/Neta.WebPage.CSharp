@@ -4,14 +4,16 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    <title></title>
+    <title>Israel Shevkolenko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body onload="Load();">
+<body>
     <header>
         <nav>
-            <img src="pic2.s.png" class="pic" />
+            <img src="pic2.s.png" class="pic" id="leftpics" />
             <a href="index.html" id="navbutton" class="a af">HomePage</a>
+            <a id="navbutton" href="../About/index.html" class="a af">About Me</a>
             <div id="dropdown">
                 <button id="dropbutton" class="a af">C#</button>
                 <div id="dropdown-content">
@@ -21,40 +23,79 @@
                     <a href="#" class="af">Link4</a>
                 </div>
             </div>
-            <a id="navbutton" href="#" class="a af">Documentations</a>
-            <a id="navbutton" href="#" class="a af">About</a>
-            <img src="pic2v.png" id="picsv" class="pic" />
+            <a id="navbutton" href="../Contact/index.html" class="a af">Contact</a>
+            <a id="navbutton" href="../HomePage/register.html" class="a af signup">Sign Up</a>
+            <!--<img src="pic2v.png" id="picsv" class="pic" /> old pic now replaced with linear-gradient for better perfomance-->
+            <div id="right-topfade"></div>
         </nav>
     </header>
     <section id="welcome">
         <img src="selfpic3g.jpg" id="selfpic" class="pic" />
         <p id="onpic">ISRAEL SHEVKOLENKO</p>
-        <article>
-            <p id="w-heading">About Me</p>
-            <p id="w-text">Well, What can i say...<br />
-             My Name is Israel SHevkolenko and Im a 14 Years<br/> 
-             old teen and 15 by second july, and coding wasnt always my thing to be honest...<br />
-            You can call me creator or an editor but in my life i engaged a lot in everything,<br />
-            photos, videos, 3d objects and animation, music and starting from mid 2017<br/>
-             - coding/programming. Both Editing and creating. My interest in computers started from age 6<br />
-             and electronics a bit later. i was disassembling and assembling many many electronics -<br/ >
-             PC's, monitors, printers, phones, and many other. always when something broke<br />
-             i fixed it myself instead of paying someone a lot of precious money. only one time <br/ >
-            i took my pc for repairs by someone because one of the chips burned. also my phone<br />
-             i changed the screen two times because im a bit clumsy and forgot to put an actual case with <br />
-            armor instead of a nice case i loved. Even at school i showed my talent at school <br />
-            when it's school projects and niche presentations or funny and professionally made videos, <br />
-            or helping teachers with the projectors failing or other configurations like internet and display. <br />
-            i cant even remember how many times i was called to fix the computer in another class but it was a lot.<br />
-            basically im a lot of time in my computer and i do everything i also game and a lot, sometimes research<br />
-            something, but overall im not some nerd or something, you wouldnt wanna go to a roast contest with me,
-            trust me, you shouldn't. im a good preson but if you betray me or do something very bad to me i can be so
-            cruel you wouldnt even think its me. somehow i had 3 girlfriends in middle school which i just finished 2 days ago
-            By the time i wrote this. for the end ill quote one sentence from one of my favorite artist of my music i listen,
-            i listen to bass house and riddim. - 6/22/2018</p><p id="quote"><i><b>"Look, if life pushes you down<br /> you gotta push back<br />
-            if you doubt a bunch of lemons<br />
-            you gotta take those lemons and stuff them down somebody's</i> throat<i><br />
-            until they see yellow"</b></i> - Subtronics, Blastin<p/>
+        <article id="w-quote">
+            <p>#Most Of My Life Is In My PC.<br />
+            I {</p>
+            <ol>
+                <li>Code
+                    <ul>
+                        <li>C#<br /><progress value="55" max="100" id="pbar"/></li>
+                        <li>HTML<br /><progress value="85" max="100" id="pbar"/></li>
+                        <li>CSS<br /><progress value="85" max="100" id="pbar"/></li>
+                        <li>JAVASCRIPT<br /><progress value="70" max="100" id="pbar"/></li>
+                        <li>XAML<br /><progress value="15" max="100" id="pbar"/></li>
+                        And More In The Future!
+                    </ul>
+                </li>
+                <li id="cli">Create & Edit
+                    <ul>
+                    <li>Videos</li>
+                    <li>Photos</li>
+                    <li>3D Objects And Animations</lil>
+                    <li>Music</li>
+                    </ul>
+                </li>
+                <li id="cli">Game
+                    <ul>
+                        <li>Open World</li>
+                        <li>Sandbox</li>
+                        <li>Fps</li>
+                        <li>And More</li>
+                    </ul>
+                </li>
+                <li id="cli">I Even Engaged In Virtual<br />Machines And Servers
+                <ul>
+                    <li>VMWare</li>
+                    <li>VirtualBox</li>
+                    <li>IIS</li>
+                    <li>Network And Wifi</li>
+                    <li>And More Related And<br />Unrelated Stuff</li>
+                </ul>
+                </li>
+            <span style="position: relative; left: -85px;">}</span></ol>
+        </article>
+        <article id="table">
+            <table id="codeskills">
+                <tr>
+                    <th>Skill/Content</th>
+                    <th>C#</th>
+                    <th>Web</th>
+                </tr>
+                <tr>
+                    <td>Web Sites</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Programs</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Games</td>
+                    <td>Yes</td>
+                    <td>Partly</td>
+                </tr>
+            </table>
         </article>
     </section>
     <footer>

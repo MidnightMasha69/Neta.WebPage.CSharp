@@ -2,6 +2,7 @@ body {
     background: #202020;
     margin: 0px;
     /*font-family: LemonMilk;*/
+    text-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
 }
 #dropdown {
     position: relative;
@@ -16,6 +17,7 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: none;
+    text-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
 }
 #dropdown-content {
     display: none;
@@ -100,18 +102,18 @@ footer {
     background: #404040;
     color: #acacac;
 }
-#picsv {
+/*#picsv {
     position: absolute;
     right: 0%;
-}
+} old pic now replaced with linear-gradient for better perfomance*/
 #welcome {
-    margin: 0px 266px 0px 137px;
+    margin: 0px 266px 0px 161px;
     padding: 16px;
     font-family: lemonmilk;
 }
 #w-heading {
     color: #ffffff;
-    text-shadow: 0px 0px 10px #8a2be2;
+    text-shadow: 2px 2px 0px #8527DD, -2px -2px 0px #76D41E;
     font-size: 54px;
     text-align: center;
 }
@@ -158,7 +160,7 @@ footer {
     text-shadow: 2px 2px 0px #8527DD, -2px -2px 0px #76D41E, 0px 0px 50px #000;
     position: absolute;
     top: 50px;
-    left: 240px;
+    left: 265px;
 }
 #w-text {
     border: 2px solid #fff;
@@ -171,4 +173,161 @@ footer {
     /*padding-right: 0px;
     text-align: justify;
     text-justify: inter-word;*/
+    background: #151515;
+}
+#w-quote {
+    font-family: monospace;
+    font-size: 38px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    text-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
+    padding: 8px;
+    background: #151515;
+    width: 930px;
+    box-shadow: 0px 0px 20px #fff;
+}
+#selfglitched {
+    width: 50%;
+    height: 50%;
+    border-radius: 4px;
+    position: relative;
+    float: right;
+}
+#quote {
+    position: relative;
+    padding: 4px;
+    text-shadow: 1px 1px 2px #fff;
+}
+/*#pbar {
+    border: 2px solid #000;
+    border-radius: 0px;
+}*/
+progress {
+    width: 70%;
+    height: 25px;
+    color: #8a2be2;
+    background: #efefef;
+}
+progress::-webkit-progress-bar {
+    background: #efefef;
+    box-shadow: 0px 0px 10px #000;
+}
+progress::-webkit-progress-value {
+    background: #8a2be2;
+    box-shadow: 0px 0px 10px #8a2be2;
+} 
+progress::-moz-progress-bar {
+    color: #8a2be2;
+    background: #efefef;
+    box-shadow: 0px 0px 10px #8a2be2;
+}
+#w-quote ol {
+    position: relative;
+    left: 100px;
+    text-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
+
+}
+#w-quote ol:before {
+    content: counter(li)'.';
+    counter-increment: li;
+    position:absolute;
+    right:98%;
+}
+#cli:before {
+    content: counter(li)'.';
+    counter-increment: li;
+    position:absolute;
+    right:98%;
+}
+#codeskills, th, td {
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    font-size: 40px;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+}
+#codeskills {
+    position: relative;
+    top: 6px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #151515;
+    box-shadow: 0px 0px 0px 1px #fff, 0px 0px 20px #fff;
+    width: 950px;
+}
+#videos iframe {
+    display: inline;
+    box-shadow: 0px 0px 20px #8a2be2;
+}
+#vright {
+    position: relative; 
+    left: 30px;
+}
+#videos {
+    font-size: 42px;
+}
+#form {
+	position: relative;
+	padding: 8px;
+	font-weight: bold;
+    background: #151515;
+    font-family: lemonmilk;
+    font-size: 48px;
+    color: #fff;
+}
+#form form input {
+	padding: 0px;
+	font-size: 48px;
+	display: block;
+}
+#submit {
+	cursor: pointer;
+	position: relative;
+    top: 8px;
+    background: #404040;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 2px;
+}
+#welcome-text {
+    font-family: lemonmilk;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+}
+#registerq {
+    font-family: lemonmilk;
+    font-size: 20px;
+    position: relative;
+    left: 35%;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 4px;
+    border-radius: 4px;
+    background: #151515;
+    box-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
+}
+#register-form {
+    /**/
+}
+.signup {
+    position: absolute;
+    right: 265px;
+}
+.signin {
+    position: absolute;
+    right: 361.2px;
+}
+#leftpics {
+    width: 177px;
+}
+#right-topfade {
+    /*width: 266px;*/
+    width: 18.5vw;
+    position: relative;
+    left: 586px;
+    background: linear-gradient(to right, #404040, #202020);
 }
