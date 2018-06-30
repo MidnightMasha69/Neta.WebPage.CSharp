@@ -28,12 +28,27 @@
             <!--<img src="pic2v.png" id="picsv" class="pic" /> old pic now replaced with linear-gradient for better perfomance-->
             <div id="right-topfade"></div>
         </nav>
+        <div id="signin-window">
+            <form id="signin-form">
+                <span>First Name:</span>
+                <input id="s-fname" type="text">
+                <span>Last Name:</span>
+                <input id="s-lname" type="text">
+                <input id="s-submit" type="button" onclick="SignIn()" value="Sign In">
+            </form>
+        </div>
+        <div id="signin-welcome">
+            <p id="sign-flname"></p>
+            <input id="del" type="button" onclick="Delete()" value="Delete Account"></input>
+        </div>
     </header>
     <section>
-        <form id="register-form" onsubmit="Submit()">
-            <input id="r-name" type="text">
-            <input id="r-submit" type="submit" value="Submit">
-
+        <form id="register-form" onsubmit="SignUp()">
+            <span>First Name:</span>
+            <input id="r-fname" type="text">
+            <span>Last Name:</span>
+            <input id="r-lname" type="text">
+            <input id="r-submit" type="submit" value="Sign Up">
         </form>
     </section>
     <footer style="position: absolute; bottom: 0px;">
