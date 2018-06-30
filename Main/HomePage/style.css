@@ -310,9 +310,6 @@ progress::-moz-progress-bar {
     background: #151515;
     box-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
 }
-#register-form {
-    /**/
-}
 .signup {
     position: absolute;
     right: 265px;
@@ -330,4 +327,73 @@ progress::-moz-progress-bar {
     position: relative;
     left: 586px;
     background: linear-gradient(to right, #404040, #202020);
+}
+#register-form, input {
+    display: block;
+    color: #fff;
+    font-family: lemonmilk;
+}
+#register-form {
+    position: relative;
+    left: 12.29vw;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #fff;
+    padding: 8px;
+    width: 65.97vw;
+    text-align: center;
+}
+#register-form input {
+    position: relative;
+    margin: auto;
+    box-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
+    border: none;
+    color: #000;
+}
+#register-form span {
+    position: relative;
+    left: -46px;
+}
+#signin-window {
+    position: relative;
+    left: 79.65vw;
+    width: 16.66vw;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #fff;
+    margin: 12px;
+    height: auto;
+}
+#signin-window input {
+    color: #000;
+}
+#signin-welcome {
+    position: relative;
+    left: 79.65vw;
+    width: 16.66vw;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #fff;
+    margin: 12px;
+    height: auto;
+}
+#signin-welcome p {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: lemonmilk;
+}
+#del {
+    margin: auto;
+}
+#del:hover {
+    box-shadow: inset 0px 0px 20px red;
+    cursor: pointer;
+    color: red;
+    border: none
+}
+#del:active {
+    border: none;
+    background: #000;
+    color: #000;
 }
