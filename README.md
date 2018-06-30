@@ -31,3 +31,5 @@ ChangeLog:
     as i said at v0.05 i didnt write the progress but in short added massive amount of content,
     added more webpages and design. Upcoming more design and perfomance fixes and adjusments,
     also a big responsive update. - 6/29/2018 - 9:38 PM
+    
+    v0.65 - Sign up beta working, more design and shit. - 6/30/2018 - 6:58 PM
