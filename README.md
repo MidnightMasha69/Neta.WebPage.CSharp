@@ -33,3 +33,5 @@ ChangeLog:
     also a big responsive update. - 6/29/2018 - 9:38 PM
     
     v0.65 - Sign up beta working, more design and shit. - 6/30/2018 - 6:58 PM
+    
+    v0.69 - Added Theme Changer from old to new theme that would be default. also a loader. - 7/1/2018 - 6:53 PM
