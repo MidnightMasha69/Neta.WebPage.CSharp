@@ -1,5 +1,6 @@
 body {
-    background: #202020;
+    /*background: #202020;*/
+    background: #fff;
     margin: 0px;
     /*font-family: LemonMilk;*/
     text-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
@@ -124,7 +125,7 @@ footer {
     height: 200px;
     box-shadow: 0px 0px 20px #fff;
 }
-.pic {
+.pic, a {
     /* prevents pics getting selected and dragged */
     user-drag: none;
     user-select: none;
@@ -178,14 +179,18 @@ footer {
 #w-quote {
     font-family: monospace;
     font-size: 38px;
-    border: 2px solid #fff;
-    border-radius: 8px;
+    /*border: 2px solid #fff;*/
+    border: 1px solid #D1D5DA;
+    /*border-radius: 8px;*/
+    border-radius: 4px;
+    /*color: #fff;*/
     color: #fff;
-    text-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
+    text-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E, 0px 0px 5px #000;;
     padding: 8px;
-    background: #151515;
+    /*background: #151515;*/
+    background: #f6f8fa;
     width: 930px;
-    box-shadow: 0px 0px 20px #fff;
+    /*box-shadow: 0px 0px 20px #fff;*/
 }
 #selfglitched {
     width: 50%;
@@ -396,4 +401,25 @@ progress::-moz-progress-bar {
     border: none;
     background: #000;
     color: #000;
+}
+#loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #8a2be2;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    position: relative;
+    top: 44.17%;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
