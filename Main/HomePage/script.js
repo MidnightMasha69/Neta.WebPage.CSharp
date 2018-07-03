@@ -26,7 +26,7 @@ function ChangeTheme(){
 }
 function MainLoad(){
     RemoveLoader();
-    Load();
+    //Load();
 }
 function NewTheme(){
     document.body.style.background = "#fff";
@@ -39,11 +39,11 @@ function NewTheme(){
     codeskills.borderRadius = "4px";
     codeskills.background = "#f6f8fa";
     codeskills.boxShadow = "none";
-    var thh = document.getElementsByTagName("th").style;
+    /*var thh = document.getElementsByTagName("th").style;
     var tdd = document.getElementsByTagName("td").style;
     codeskills.border = "1px solid #d1d5da";
     thh.border = "1px solid #d1d5da";
-    tdd.border = "1px solid #d1d5da";
+    tdd.border = "1px solid #d1d5da";*/
 
 }
 function OldTheme(){
@@ -57,11 +57,11 @@ function OldTheme(){
     codeskills.borderRadius = "8px";
     codeskills.background = "#151515";
     codeskills.boxShadow = "0px 0px 0px 1px #fff, 0px 0px 20px #fff";
-    var thh = document.getElementsByTagName("th").style;
+    /*var thh = document.getElementsByTagName("th").style;
     var tdd = document.getElementsByTagName("td").style;
     codeskills.border = "2px solid #fff";
     thh.border = "2px solid #fff";
-    tdd.border = "2px solid #fff";
+    tdd.border = "2px solid #fff";*/
 }
 /*tohere is first time wrote full script without checking
 for bugs or testing and it worked perfectly! Yeet*/

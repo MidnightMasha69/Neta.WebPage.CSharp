@@ -5,27 +5,9 @@
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="../HomePage/script.js"></script>
     <title>Israel Shevkolenko</title>
-<!--
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-    $("#loadblank").on('click', function(event){
-        if (this.hash !== ""){
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = hash;
-            });
-        }
-    });
-    });
-    </script>
--->
 </head>
-<body onload="MainLoad()">
-    <div id="loadblank" style="height: 100vh; width: 100vw; background: #fff; z-index: 100;">
+<body onload="MainLoad();">
+    <div id="loadblank" style="height: 100vh; width: 100vw; background: #151515; z-index: 1000;">
         <div id="loader"></div>
     </div>
     <header>
