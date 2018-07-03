@@ -36,3 +36,5 @@ ChangeLog:
     
     v0.69 - Added Theme Changer from old to new theme that would be default. also a loader. - 7/1/2018 - 6:53 PM
     dont forget add source link
+    
+    v0.7 - Yet anothe redesign but finally a final one, fully applied to homepage. more edits and fixes. - 7/4/2018 - 12:26 AM
