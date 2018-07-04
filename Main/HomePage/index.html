@@ -5,7 +5,7 @@
     <script type="text/javascript" src="script.js"></script>
     <title>Israel Shevkolenko</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body onload="MainLoad()">
         <div id="loadblank" style="height: 100vh; width: 100vw; background: #151515; z-index: 100;">
@@ -32,6 +32,23 @@
             <!--<img src="pic2v.png" id="picsv" class="pic" /> old pic now replaced with linear-gradient for better perfomance-->
         </nav>
         <div id="right-topfade"></div>
+        <div id="signin-window">
+                <p id="signin-window-logged"></p>
+                <input type="button" id="signout" value="Sign Out" onclick="SignOut();">
+                <form id="signin-form">
+                    <span id="si">Sign In</span><br />
+                    <span>First Name:</span>
+                    <input id="s-fname" type="text">
+                    <span>Last Name:</span>
+                    <input id="s-lname" type="text">
+                    <input id="s-submit" type="button" onclick="SignIn()" value="Sign In">
+                </form>
+            </div>
+            <div id="signin-welcome">
+                    <p id="sign-flname"></p>
+                    <input id="del" type="button" onclick="Delete()" value="Delete Account"></input>
+                    <input type="button" id="forgot" onclick="Forgot()" value="Forgot Name?">
+            </div>
     </header>
     <section id="welcome">
         <div id="containself">

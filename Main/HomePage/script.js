@@ -1,3 +1,13 @@
+function Write(){
+    if(!localStorage.key("fname")){
+        document.getElementById("whowrite").innerHTML = "You're not signed in/registered. proceed to sign up or sign in.";
+    }
+    else{
+        document.getElementById("whowrite").innerHTML = "You're Writing As " + localStorage.getItem("fname") + ".";
+    }
+    RemoveLoader();
+    //Sign();
+}
 /*fromhere*/
 function Load(){
     if(!localStorage.key("IsNewTheme")){
@@ -13,6 +23,8 @@ function Load(){
 function RemoveLoader(){
     var Loader = document.getElementById("loadblank");
     Loader.parentNode.removeChild(Loader);
+    document.getElementById("signin-window").style.opacity = 1;
+    document.getElementById("signout").style.display = "none";
 }
 function ChangeTheme(){
     if(localStorage.getItem("IsNewTheme") === "Yes"){
@@ -26,6 +38,7 @@ function ChangeTheme(){
 }
 function MainLoad(){
     RemoveLoader();
+    //Sign();
     //Load();
 }
 function NewTheme(){
@@ -71,16 +84,63 @@ function SignUp(){
     localStorage.setItem("fname", fname.value);
     localStorage.setItem("lname", lname.value);
 }
-function SignIn(){
-    if(document.getElementById("s-fname").value === localStorage.getItem("fname")){
-        document.getElementById("sign-flname").innerHTML = "welcome " + localStorage.getItem("fname") + " !";
+/*function Sign(){
+    if(document.getElementById("sign-flname").value = localStorage.getItem("fname")){
+        SignedIn();
     }
     else{
-        document.getElementById("sign-flname").innerHTML = "error";
+        SignIn();
+    }
+}
+function SignedIn(){
+        document.getElementById("sign-flname").innerHTML = "welcome " + localStorage.getItem("fname") + " !";
+        document.getElementById("forgot").style.display = "none";
+        document.getElementById("signin-form").style.display = "none";
+        document.getElementById("signin-window-logged").innerHTML = "My Account<br/>";
+        document.getElementById("del2").style.display = "block";
+}
+function SignOut(){
+    document.getElementById("sign-flname").innerHTML = "welcome " + localStorage.getItem("fname") + " !";
+    document.getElementById("forgot").style.display = "block";
+    document.getElementById("signin-form").style.display = "block";
+    document.getElementById("signin-window-logged").innerHTML = "";
+    document.getElementById("del2").style.display = "none";
+    document.getElementById("signout").style.display = "none";
+    document.getElementById("s-fname").innerHTML = "";
+    Write();
+    SignIn();
+}*/
+function SignIn(){
+    document.getElementById("signin-welcome").style.display = "block";
+    if(document.getElementById("s-fname").value === localStorage.getItem("fname")){
+        document.getElementById("sign-flname").innerHTML = "welcome " + localStorage.getItem("fname") + " !";
+        document.getElementById("forgot").style.display = "none";
+        document.getElementById("signin-form").style.display = "none";
+        document.getElementById("signin-window-logged").innerHTML = "My Account<br/>";
+        document.getElementById("del2").style.display = "block";
+    }
+    else if(!localStorage.key("fname")){
+        document.getElementById("sign-flname").innerHTML = "no account registered. <br /> Proceed to Sign Up.";
+        document.getElementById("del").style.display = "none";
+        document.getElementById("forgot").style.display = "none";
+    }
+    else if(document.getElementById("s-fname").value != localStorage.getItem("fname")){
+        document.getElementById("sign-flname").innerHTML = "name misspelled. please enter correctly.";
+    }
+    else{
+        document.getElementById("sign-flname").innerHTML = "unknown/undefined error";
     }
 }
 function Delete(){
     localStorage.clear();
     /*localStorage.removeItem("fname");
     localStorage.removeItem("lname");*/
+    document.getElementById("sign-flname").innerHTML = "Successfully Deleted Account.";
+    document.getElementById("del").style.display = "none";
+    document.getElementById("forgot").style.display = "none";
+}
+function Forgot(){
+    document.getElementById("sign-flname").innerHTML = "Well um.. ask your parents..?<br />Or You can delete your account and sign new!";
+    document.getElementById("del").style.display = "block";
+    document.getElementById("forgot").style.display = "none";
 }

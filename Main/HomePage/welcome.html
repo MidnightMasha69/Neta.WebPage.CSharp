@@ -8,9 +8,13 @@
 </head>
 
 <body onload="Load();">
+    <div id="loadblank" style="height: 100vh; width: 100vw; background: #151515; z-index: 100;">
+        <div id="loader"></div>
+    </div>
     <header>
         <nav>
-            <img src="../HomePage/pic2.s.png" class="pic" id="leftpics" />
+            <!--<img src="pic2.s.png" class="pic" id="leftpics" />-->
+            <div id="left-topfade"></div>
             <a href="../HomePage/index.html" id="navbutton" class="a af">HomePage</a>
             <a id="navbutton" href="../About/index.html" class="a af">About Me</a>
             <div id="dropdown">
@@ -25,20 +29,22 @@
             <a id="navbutton" href="../Contact/index.html" class="a af">Contact</a>
             <a id="navbutton" href="../HomePage/register.html" class="a af signup">Sign Up</a>
             <!--<img src="pic2v.png" id="picsv" class="pic" /> old pic now replaced with linear-gradient for better perfomance-->
-            <div id="right-topfade"></div>
+            <div id="right-topfade" style="position: absolute; right: 0vw;"></div>
         </nav>
     </header>
     <p id="welcome-text">Welcome To My Site!</p>
-    <p id="welcome-text" style="font-size: 38px;">Would You like to register?</p>
-    <a id="registerq" href="register.html">Yes Lets Register</a>
+    <p id="welcome-text" style="font-size: 38px;">Would You like to Sign Up?</p>
+    <a id="registerq" href="register.html">Yes Lets Sign Up</a>
     <a id="registerq" href="index.html">No continue to site</a>
     
     <footer style="position: absolute; bottom: 0px; left: 0px;">
-        <img src="../HomePage/pic3s.png" class="pic" />
+        <!--<img src="pic3s.png" class="pic" />-->
+        <div id="left-bottomfade"></div>
         <article id="footera">
             <p>&copy; 2018 Israel Shevkolenko</p>
         </article>
-        <img src="../HomePage/pic3sv.png" id="picsv" class="pic" />
-    </footer>
+        <!--<img src="pic3sv.png" id="picsv" class="pic" />-->
+        <div id="right-bottomfade"></div>
+        </footer>
 </body>
 </html>

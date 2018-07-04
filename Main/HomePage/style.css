@@ -70,6 +70,14 @@ body {
     margin: 0px;
     transition: all 0.3s;
 }
+* {
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 900px){
+    navbutton{
+        font-size: 1.11vw;
+    }
+}
 .a {
     text-decoration: none;
 }
@@ -90,14 +98,14 @@ header {
     background: #151515;
     padding: 0px;
     margin: 0px;
-    height: 55px;
+    height: 56px;
     border-bottom: 1px solid #000;
     box-shadow: 0px 0px 10px #000;
     /**/
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
     /**/
 }
 #navbutton:hover {
@@ -216,10 +224,13 @@ footer {
     color: white;
 }
 #w-text {
-    border: 2px solid #fff;
-    border-radius: 8px;
+    /*border: 2px solid #fff;
+    border-radius: 8px;*/
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
     width: auto;
-    box-shadow: 0px 0px 20px #fff;
+    /*box-shadow: 0px 0px 20px #fff;*/
+    box-shadow: 0px 0px 10px #8a2be2;
     font-size: 16px;
     color: #fff;
     padding: 8px;
@@ -230,7 +241,8 @@ footer {
 }
 #w-quote {
     font-family: monospace;
-    font-size: 38px;
+    /*font-size: 38px;*/
+    font-size: 2.63vw;
     /*border: 2px solid #fff;*/
     border: 1px solid #D1D5DA;
     /*border-radius: 8px;*/
@@ -284,28 +296,34 @@ progress::-moz-progress-bar {
     background: #efefef;
     box-shadow: 0px 0px 10px #8a2be2;
 }
+#w-quote li {
+    max-width: 70vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
 #w-quote ol {
+    max-width: 70vw;
     position: relative;
     left: 100px;
     text-shadow: 1px 1px 0px #8527DD, -1px -1px 0px #76D41E;
-
 }
 #w-quote ol:before {
     content: counter(li)'.';
     counter-increment: li;
     position:absolute;
-    right:98%;
+    right: 98%;
 }
 #cli:before {
     content: counter(li)'.';
     counter-increment: li;
     position:absolute;
-    right:98%;
+    right: 98%;
 }
 #codeskills, th, td {
     /*border: 2px solid #fff;*/
     border-collapse: collapse;
-    font-size: 40px;
+    /*font-size: 40px;*/
+    font-size: 2.77vw;
     padding: 8px;
     color: #fff;
     text-align: center;
@@ -343,22 +361,40 @@ th, td {
 	font-weight: bold;
     background: #151515;
     font-family: lemonmilk;
-    font-size: 48px;
+    font-size: 2.22vw;
     color: #fff;
+    width: 69.44vw;
+    left: 15vw;
+    top: 4.93vw;
 }
 #form form input {
 	padding: 0px;
-	font-size: 48px;
-	display: block;
+	font-size: 2.22vw;
+    display: block;
+    width: 30vw;
+    color: #000;
+}
+#ta {
+    overflow: auto;
+    width: 30vw;
+    height: 6.42vh;
+    outline: none;
+    transition: 1s all ease-in-out;
+}
+#ta:focus {
+    width: 69.44vw;
+    height: 20vh;
 }
 #submit {
 	cursor: pointer;
 	position: relative;
     top: 8px;
-    background: #404040;
-    border: 2px solid #fff;
+    background: #8a2be2;
+    /*border: 2px solid #fff;*/
+    border: 1px solid #d1d5da;
     border-radius: 4px;
     padding: 2px;
+    color: #fff;
 }
 #welcome-text {
     font-family: lemonmilk;
@@ -382,6 +418,7 @@ th, td {
 .signup {
     position: absolute;
     right: 15vw;
+    height: 7.20vh;
 }
 .signin {
     position: absolute;
@@ -434,13 +471,18 @@ th, td {
 }
 #register-form {
     position: relative;
-    left: 12.29vw;
-    border: 2px solid #fff;
+    left: 15vw;
+    /*border: 2px solid #fff;
     border-radius: 8px;
-    box-shadow: 0px 0px 20px #fff;
+    box-shadow: 0px 0px 20px #fff;*/
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px #8a2be2;
     padding: 8px;
-    width: 65.97vw;
+    width: 70vw;
     text-align: center;
+    top: 4.93vw;
+    height: 30vw;
 }
 #register-form input {
     position: relative;
@@ -454,27 +496,56 @@ th, td {
     left: -46px;
 }
 #signin-window {
+    opacity: 0;
     position: relative;
-    left: 79.65vw;
-    width: 16.66vw;
-    border: 2px solid #fff;
+    left: 85vw;
+    width: 12vw;
+    /*border: 2px solid #fff;
     border-radius: 8px;
-    box-shadow: 0px 0px 20px #fff;
-    margin: 12px;
+    box-shadow: 0px 0px 20px #fff;*/
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px #8a2be2;
+    margin: 12px 0px 0px 16px;
     height: auto;
+    /*background: linear-gradient(to left, #151515, #8a2be2);*/
+    background: #151515;
+    color: #fff;
+    text-shadow: none;
+    font-family: lemonmilk;
+    padding: 1vw;
 }
 #signin-window input {
     color: #000;
+    width: 10vw;
+}
+#si {
+    text-align: center;
+    font-size: 2vw;
 }
 #signin-welcome {
+    display: none;
     position: relative;
-    left: 79.65vw;
-    width: 16.66vw;
-    border: 2px solid #fff;
+    left: 85vw;
+    width: 12vw;
+    /*border: 2px solid #fff;
     border-radius: 8px;
-    box-shadow: 0px 0px 20px #fff;
-    margin: 12px;
+    box-shadow: 0px 0px 20px #fff;*/
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px #8a2be2;
+    margin: 8px 0px 0px 16px;
+    /*margin: 12px;*/
     height: auto;
+}
+#s-submit {
+    margin-top: 4px;
+    cursor: pointer;
+}
+#r-submit {
+    position: relative;
+    top: 8px;
+    cursor: pointer;
 }
 #signin-welcome p {
     text-align: center;
@@ -482,19 +553,18 @@ th, td {
     font-size: 16px;
     font-family: lemonmilk;
 }
-#del {
+#del, #forgot {
     margin: auto;
 }
-#del:hover {
-    box-shadow: inset 0px 0px 20px red;
+#del:hover, #forgot:hover {
+    box-shadow: inset 0px 0px 20px #8a2be2;
     cursor: pointer;
-    color: red;
-    border: none
 }
-#del:active {
-    border: none;
-    background: #000;
-    color: #000;
+input:focus {
+    outline: none;
+}
+#del {
+    display: none;
 }
 #loader {
     border: 8px solid #f3f3f3;
@@ -504,8 +574,9 @@ th, td {
     height: 60px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-    margin: auto;
-    position: relative;
+    /*margin: auto;*/
+    left: 47.83%;
+    position: absolute;
     top: 44.17%;
 }
 @-webkit-keyframes spin {
