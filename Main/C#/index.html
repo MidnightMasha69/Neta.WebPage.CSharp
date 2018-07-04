@@ -4,19 +4,18 @@
     <link rel="stylesheet" type="text/css" href="../HomePage/style.css">
     <script type="text/javascript" src="../HomePage/script.js"></script>
     <title>Israel Shevkolenko</title>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>$('textarea').autoResize();</script>-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 </head>
-<body onload="Write();">
+<body onload="MainLoad()">
         <div id="loadblank" style="height: 100vh; width: 100vw; background: #151515; z-index: 100;">
-                <div id="loader"></div>
-            </div>
+            <div id="loader"></div>
+        </div>
     <header>
         <nav>
-            <!--<img src="../HomePage/pic2.s.png" class="pic" id="leftpics" />-->
+            <!--<img src="pic2.s.png" class="pic" id="leftpics" />-->
             <div id="left-topfade"></div>
-            <a href="../HomePage/index.html" id="navbutton" class="a af">HomePage</a>
+            <a href="index.html" id="navbutton" class="a af">HomePage</a>
             <a id="navbutton" href="../About/index.html" class="a af">About Me</a>
             <div id="dropdown">
                     <button id="dropbutton" class="a af" onclick="location.href='../C%23/index.html';">C#</button>
@@ -28,10 +27,11 @@
                 </div>
             </div>
             <a id="navbutton" href="../Contact/index.html" class="a af">Contact</a>
+            <a id="navbutton" class="a af change-theme" onclick="ChangeTheme()">Old Theme</a>
             <a id="navbutton" href="../HomePage/register.html" class="a af signup">Sign Up</a>
             <!--<img src="pic2v.png" id="picsv" class="pic" /> old pic now replaced with linear-gradient for better perfomance-->
-            <div id="right-topfade" style="position: absolute; right: 0vw;"></div>
         </nav>
+        <div id="right-topfade"></div>
         <div id="signin-window">
                 <p id="signin-window-logged"></p>
                 <input type="button" id="signout" value="Sign Out" onclick="SignOut();">
@@ -43,38 +43,33 @@
                     <input id="s-lname" type="text">
                     <input id="s-submit" type="button" onclick="SignIn()" value="Sign In">
                 </form>
-                <input id="del2" type="button" onclick="Delete()" value="Delete Account" style="display: none;">
             </div>
             <div id="signin-welcome">
                     <p id="sign-flname"></p>
-                    <input id="del" type="button" onclick="Delete()" value="Delete Account">
+                    <input id="del" type="button" onclick="Delete()" value="Delete Account"></input>
                     <input type="button" id="forgot" onclick="Forgot()" value="Forgot Name?">
             </div>
     </header>
-    <section>
-        <div id="form">
-            <form action="afterform.html">
-                <p id="whowrite"></p><br />
-                <!--First Name:
-                <input id="name1" type="text" name="fname" placeholder="etc. Israel" required>
-                Last Name:
-                <input id="name2" type="text" name="lname" placeholder="etc. Israeli" required>-->
-                Email: (optional)
-                <input id="email" type="email" name="email" placeholder="etc. israel@israel.com">
-                Your Mind:
-                <input id="ta" type="textarea" placeholder="Everything" required>
-                <input type="submit" value="Submit" id="submit">
-            </form>
-        </div>
+    <section id="cssection">
+        <p id="cs-heading">C#</p>
+        <article id="projects">
+            <p id="sub-p">Here ill post my C# projects,<br />tho i dont have much now...</p>
+            <div id="cs-projects">
+                <p class="cs-p-heading">NahasBly*t</p>
+                <p class="cs-p-content">bible informational program in C#, WPF and .NET 3.5</p>
+                <iframe src="NahasBlyat"></iframe>
+            </div>
+        </article>
     </section>
-    <footer style="position: absolute; bottom: 0px;">
-        <!--<img src="../HomePage/pic3s.png" class="pic" />-->
+    <footer>
+        <!--<img src="pic3s.png" class="pic" />-->
         <div id="left-bottomfade"></div>
         <article id="footera">
             <p>&copy; 2018 Israel Shevkolenko</p>
         </article>
-        <!--<img src="../HomePage/pic3sv.png" id="picsv" class="pic" />-->
+        <!--<img src="pic3sv.png" id="picsv" class="pic" />-->
         <div id="right-bottomfade"></div>
     </footer>
 </body>
+
 </html>
