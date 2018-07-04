@@ -39,4 +39,4 @@ ChangeLog:
     
     v0.7 - Yet anothe redesign but finally a final one, fully applied to homepage. more edits and fixes. - 7/4/2018 - 12:26 AM
     
-    v0.8 - Final design applied to all other pages and sign in - sign up system upgraded and sign out system in alpha. more fixes and       additions. - 7/4/2018 - 9:46 AM
+    v0.8 - The responsive Update is Here, Final design applied to all other pages and sign in - sign up system upgraded and sign out         system in alpha. more fixes and additions. - 7/4/2018 - 9:46 AM
