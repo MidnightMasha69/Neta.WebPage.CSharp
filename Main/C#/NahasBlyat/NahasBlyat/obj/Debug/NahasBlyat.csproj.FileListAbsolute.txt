@@ -1,0 +1,14 @@
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\bin\Debug\NahasBlyat.exe
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\bin\Debug\NahasBlyat.pdb
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\NahasBlyat.csprojResolveAssemblyReference.cache
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\MainWindow.g.cs
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\App.g.cs
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\NahasBlyat_MarkupCompile.cache
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\NahasBlyat_MarkupCompile.lref
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\MainWindow.baml
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\NahasBlyat.g.resources
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\NahasBlyat.Properties.Resources.resources
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\NahasBlyat.csproj.GenerateResource.cache
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\NahasBlyat.csproj.CoreCompileInputs.cache
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\NahasBlyat.exe
+c:\users\israe\source\repos\NahasBlyat\NahasBlyat\obj\Debug\NahasBlyat.pdb

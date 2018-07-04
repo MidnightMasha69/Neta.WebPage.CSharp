@@ -310,13 +310,13 @@ progress::-moz-progress-bar {
 #w-quote ol:before {
     content: counter(li)'.';
     counter-increment: li;
-    position:absolute;
+    position: absolute;
     right: 98%;
 }
 #cli:before {
     content: counter(li)'.';
     counter-increment: li;
-    position:absolute;
+    position: absolute;
     right: 98%;
 }
 #codeskills, th, td {
@@ -587,4 +587,33 @@ input:focus {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+#cssection {
+    border: 1px solid #d1d5da;
+    box-shadow: 0px 0px 10px #8a2be2;
+    position: relative;
+    left: 15vw;
+    width: 70vw;
+    height: 600px;
+    top: 9.30vh;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-family: lemonmilk;
+    font-size: 3.33vw;
+}
+#sub-p {
+    font-size: 2.22vw;
+}
+#cs-projects {
+    border-top: 1px solid #d1d5da;
+    text-align: left;
+    padding: 8px;
+}
+.cs-p-heading {
+    font-size: 2.11vw;
+    margin: 0px;
+}
+.cs-p-content {
+    font-size: 1.5vw
 }
