@@ -12,7 +12,8 @@
     </div>
     <header>
         <nav>
-            <img src="../HomePage/pic2.s.png" class="pic" id="leftpics" />
+            <div id="left-topfade"></div>
+            <!--<img src="../HomePage/pic2.s.png" class="pic" id="leftpics" />-->
             <a href="../HomePage/index.html" id="navbutton" class="a af">HomePage</a>
             <a id="navbutton" href="../About/index.html" class="a af">About Me</a>
             <div id="dropdown">
@@ -27,8 +28,26 @@
             <a id="navbutton" href="../Contact/index.html" class="a af">Contact</a>
             <a id="navbutton" href="../HomePage/register.html" class="a af signup">Sign Up</a>
             <!--<img src="pic2v.png" id="picsv" class="pic" /> old pic now replaced with linear-gradient for better perfomance-->
-            <div id="right-topfade"></div>
+            <div id="right-topfade" style="position: absolute; right: 0vw;"></div>
         </nav>
+        <div id="right-topfade"></div>
+        <div id="signin-window">
+                <p id="signin-window-logged"></p>
+                <input type="button" id="signout" value="Sign Out" onclick="SignOut();">
+                <form id="signin-form">
+                    <span id="si">Sign In</span><br />
+                    <span>First Name:</span>
+                    <input id="s-fname" type="text">
+                    <span>Last Name:</span>
+                    <input id="s-lname" type="text">
+                    <input id="s-submit" type="button" onclick="SignIn()" value="Sign In">
+                </form>
+            </div>
+            <div id="signin-welcome">
+                    <p id="sign-flname"></p>
+                    <input id="del" type="button" onclick="Delete()" value="Delete Account"></input>
+                    <input type="button" id="forgot" onclick="Forgot()" value="Forgot Name?">
+            </div>
     </header>
     <section id="welcome">
         <article>
@@ -77,11 +96,13 @@
         </article>
     </section>
     <footer>
-        <img src="../HomePage/pic3s.png" class="pic" />
+        <!--<img src="../HomePage/pic3s.png" class="pic" />-->
+        <div id="left-bottomfade"></div>
         <article id="footera">
             <p>&copy; 2018 Israel Shevkolenko</p>
         </article>
-        <img src="../HomePage/pic3sv.png" id="picsv" class="pic" />
+        <!--<img src="../HomePage/pic3sv.png" id="picsv" class="pic" />-->
+        <div id="right-bottomfade"></div>
     </footer>
 </body>
 
